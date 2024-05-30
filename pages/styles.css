@@ -1,0 +1,459 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(57, 52, 50);
+    font-family: "Kumbh Sans", sans-serif;
+    color: white;
+}
+
+/* HEADER SECTION */
+
+main {
+    background-image: url(../pictures/pic8.jpg);
+    background-position: 50% 85%;
+    background-size: 800px;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+    color: white;
+    max-height: 90vh;
+}
+
+header img {
+    border-radius: 50%;
+    width: 250px;
+}
+
+.header-shop-now {
+    display: flex;
+    height: 3rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.header-shop-now a {
+    text-decoration: none;
+    color: black;
+}
+
+.header-shop-now a {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px black;
+    cursor: pointer;
+}
+
+.header-shop-now a:hover {
+    background-color: var(--link--hover--color);
+    color: white;
+    transition: 0.2s;
+}
+
+.header-shop-now a:not(:hover) {
+    transition: 0.2s;
+}
+
+.header-shop-now a:active {
+    background-color: var(--link--active--color);
+}
+
+/* MAX CONTENT */
+
+.max-content {
+    width: 325px;
+    margin: auto;
+}
+
+/* NAV SECTION */
+
+nav {
+    display: flex;
+    justify-content: right;
+    min-height: 7vh;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: rgb(27, 27, 27);
+}
+
+nav .nav-name {
+    display: none;
+}
+
+nav p, .nav-buttons {
+    margin: 0.5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 175px;
+}
+
+nav ul, li, a {
+    list-style: none;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--link--hover--color);
+    transition: 0.2s;
+}
+
+nav a:not(:hover) {
+    transition: 0.2s;
+}
+
+nav a:active {
+    color: var(--link--active--color);
+}
+
+nav li, a, p {
+    color: white;
+}
+
+/* ABOUT SECTION */
+
+.about {
+    min-height: 130vh;
+    margin-top: 3rem;
+}
+
+.about-header, .about-text {
+    margin-top: 2rem;
+}
+
+.about-text {
+    line-height: 1.5rem;
+}
+
+.mascot img {
+    box-shadow: 0px 0px 15px rgb(131, 119, 114);
+}
+
+
+.instagram-account {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.instagram-account:hover {
+    color: var(--link--hover--color);
+    transition: 0.2s;
+}
+
+.instagram-account:not(:hover) {
+    transition: 0.2s;
+}
+
+.instagram-account:active {
+    color: var(--link--active--color);
+}
+
+.depop-store {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.depop-store i {
+    font-size: 1.2rem;
+}
+
+.depop-store:hover {
+    color: var(--link--hover--color);
+    transition: 0.2s;
+}
+
+.depop-store:not(:hover) {
+    transition: 0.2s;
+}
+
+.depop-store:active {
+    color: var(--link--active--color);
+}
+
+.mascot {
+    width: 325px;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+.mascot img {
+    width: 325px;
+}
+
+.about h2 {
+    font-size: 3rem;
+}
+
+.about ul {
+    margin: 0;
+    margin-top: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+}
+
+/* -------------------------------------- SHOP NOW BUTTON ----------------------------------------- */
+
+.shop-now {
+    display: flex;
+    height: 3rem;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.shop-now a {
+    grid-row: 2;
+    padding: 0.8rem 3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px black;
+    cursor: pointer;
+    color: black;
+}
+
+.shop-now a:hover {
+    background-color: var(--link--hover--color);
+    color: white;
+    transition: 0.2s;
+}
+
+.shop-now a:not(:hover) {
+    transition: 0.2s;
+}
+
+.shop-now a:active {
+    background-color: var(--link--active--color);
+}
+
+/* VIEW GALLERY SECTION */
+
+.view-gallery {
+    position: relative;
+    min-height: 75vh;
+    margin-top: 4rem;
+}
+
+.view-gallery-pic {
+    display: none;
+}
+
+.view-gallery img {
+    position: absolute;
+    object-fit: contain;
+    width: 325px;
+    filter: blur(3px) grayscale(50);
+    border: 2px black solid;
+}
+
+.view-gallery img:hover {
+    filter: blur(0);
+    transition: 0.5s;
+}
+
+.view-gallery img:not(:hover) {
+    transition: 0.5s;
+}
+
+.view-gallery a {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    grid-row: 2;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px black;
+    cursor: pointer;
+    color: black;
+}
+
+.view-gallery a:hover {
+    background-color: var(--link--hover--color);
+    color: white;
+    transition: 0.2s;
+}
+
+.view-gallery a:not(:hover) {
+    transition: 0.2s;
+}
+
+.view-gallery :active {
+    background-color: var(--link--active--color);
+}
+
+/*  ------------------------------ MEDIUM SCREENS ----------------------------------- */
+
+@media screen and (min-width: 800px) {
+
+    /* NAV SECTION */
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        min-height: 7vh;
+        font-size: 2rem;
+        font-weight: bold;
+        background-color: rgb(27, 27, 27);
+    }
+
+    nav .nav-name {
+        display: block;
+        color: white;
+        margin-left: 0.7rem;
+    }
+
+    nav a {
+        color: white;
+    }
+
+    /* HEADER SECTION */
+
+    main {
+        background-image: url(../pictures/pic7.jpg);
+        background-position: 10% 10%;
+        background-size: 1400px;
+        min-height: 100vh;
+    }   
+
+    header {
+        max-height: 93vh;
+    }
+
+    header img {
+        border-radius: 50%;
+        width: 280px;
+    }
+
+    /* MAX CONTENT */
+
+    .max-content {
+        width: 550px;
+        margin: auto;
+    }
+
+    /* ABOUT SECTION */
+
+    .about {
+        min-height: 105vh;
+        margin-top: 3rem;
+    }
+
+    /* VIEW GALLERY SECTION */
+
+    .view-gallery {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        min-height: 75vh;
+        margin-top: 4rem;
+    }
+
+    .view-gallery div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .view-gallery img {
+        object-fit: contain;
+        width: 400px;
+        filter: blur(3px) grayscale(50);
+        border: 2px black solid;
+    }
+
+    .view-gallery button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        grid-row: 2;
+        padding: 0.7rem 1rem;
+        font-size: 1rem;
+        font-weight: bold;
+        background-color: white;
+        border-radius: 5px;
+        border: 2px black;
+        cursor: pointer;
+    }
+
+    /* -------------------------------------- SHOP NOW BUTTON ----------------------------------------- */
+
+}
+
+/* ------------------------------------------- LARGE SCREENS ----------------------------------------- */
+
+@media screen and (min-width: 1200px) {
+
+    /* HEADER SECTION */
+
+    main {
+        background-image: url(../pictures/pic7.jpg);
+        background-position: 0% 10%;
+        background-size: 1510px;
+        min-height: 100vh;
+    }   
+
+    /* MAX CONTENT */
+
+    .max-content {
+        width: 1100px;
+        margin: auto;
+    }
+
+    /* ABOUT SECTION */
+
+    .about {
+        min-height: 95vh;
+        margin-top: 3rem;
+    }
+
+    .mascot img {
+        box-shadow: 0px 0px 30px rgb(131, 119, 114);
+    }
+
+    /* VIEW GALLERY SECTION */
+
+    .view-gallery {
+        justify-content: center;
+        position: relative;
+        min-height: 55vh;
+        margin-top: 4rem;
+    }
+
+
+    .view-gallery-pic {
+        display: contents;
+    }
+
+    .view-gallery img {
+        width: 300px;
+        filter: blur(3px) grayscale(50);
+        border: 2px black solid;
+    }
+
+    .view-gallery div {
+        display: flex;
+        justify-content: space-around;
+        width: 1100px;
+    }
+
+    .view-gallery button {
+        top: 45%;
+    }
+}

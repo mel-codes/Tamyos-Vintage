@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(27, 27, 27);
+    font-family: "Kumbh Sans", sans-serif;
+    color: white;
+}
+
+/* HEADER SECTION */
+
+main {
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 15rem;
+    font-size: 2rem;
+}
+
+/* MAX CONTENT */
+
+.max-content {
+    width: 325px;
+    margin: auto;
+}
+
+/* NAV SECTION */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    min-height: 7vh;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: rgb(27, 27, 27);
+}
+
+.back-button {
+    margin: 0.5rem;
+}
+
+nav .nav-name {
+    display: none;
+}
+
+nav p, .nav-buttons {
+    margin: 0.5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 175px;
+}
+
+nav ul, li, a {
+    list-style: none;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--link--hover--color);
+    transition: 0.2s;
+}
+
+nav a:not(:hover) {
+    transition: 0.2s;
+}
+
+nav a:active {
+    color: var(--link--active--color);
+}
+
+nav li, a, p {
+    color: white;
+}
+
+/* GALLERY SECTION */
+
+.gallery-section {
+    display: grid;
+    grid-template-rows: max-content;
+    row-gap: 4rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.gallery-section img{
+    width: 325px;
+    border: 5px solid white;
+    box-shadow: 0px 0px 15px rgb(131, 119, 114);
+}
+
+/* BACK TO TOP BUTTON */
+
+.back-to-top-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    min-height: 3rem;
+}
+
+/*  ------------------------------ MEDIUM SCREENS ----------------------------------- */
+
+@media screen and (min-width: 800px) {
+
+    /* NAV SECTION */
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        min-height: 7vh;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    nav a {
+        color: white;
+    }
+
+    /* MAX CONTENT */
+
+    .max-content {
+        width: 550px;
+        margin: auto;
+    }
+}
+
+/* ------------------------------------------- LARGE SCREENS ----------------------------------------- */
+
+@media screen and (min-width: 1200px) {
+    
+    /* MAX CONTENT */
+
+    .max-content {
+        width: 1100px;
+        margin: auto;
+    }
+
+    /* GALLERY SECTION */
+
+    .gallery-section {
+        grid-template-columns: max-content max-content;
+        column-gap: 4rem;
+        align-items: center;
+    }
+
+    .gallery-section img {
+        box-shadow: 0px 0px 30px rgb(131, 119, 114);
+    }
+}

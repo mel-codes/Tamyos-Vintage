@@ -1,0 +1,10 @@
+/* COLOR VARIABLES */
+
+:root {
+
+    /* COLORS FOR LINKS */
+
+    --link--hover--color: rgb(131, 119, 114);
+    --link--active--color: rgb(213, 189, 179);
+
+}
